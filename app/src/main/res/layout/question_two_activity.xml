@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionOneActivity"
+    android:gravity="center"
+    android:layout_margin="30dp">
+    <TextView
+        android:id="@+id/question"
+        style="@style/question"
+        android:text="@string/question2"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_below="@id/question"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_dough" />
+    <LinearLayout
+        android:id="@+id/answers1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image">
+        <TextView
+            android:id="@+id/answer1"
+            style="@style/answer"
+            android:onClick="answer1"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/question2_answer1" />
+        <TextView
+            android:id="@+id/answer2"
+            style="@style/answer"
+            android:onClick="answer2"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/question2_answer2" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/answers2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answers1"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/answer3"
+            style="@style/answer"
+            android:onClick="answer3"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question2_answer3" />
+        <TextView
+            android:id="@+id/answer4"
+            style="@style/answer"
+            android:onClick="answer4"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/question2_answer4" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@id/answers2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:onClick="submit"
+        android:text="Continue" />
+</RelativeLayout>

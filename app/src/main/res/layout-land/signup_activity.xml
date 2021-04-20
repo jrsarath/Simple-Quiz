@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:layout_gravity="center"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="15px">
+        <ImageButton
+            style="@style/headerBackBtn"
+            android:onClick="goBack" />
+        <TextView
+            style="@style/headerText"
+            android:text="Signup"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_signup"
+            android:padding="30dp"
+            android:layout_weight="1"/>
+        <ScrollView
+            android:id="@+id/scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="30dp"
+                android:paddingBottom="30dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/firstname"
+                        style="@style/defaultInputContainer"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:hint="First Name" >
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/defaultInput"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/lastname"
+                        style="@style/defaultInputContainer"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:hint="Last Name" >
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/defaultInput"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dob"
+                    style="@style/defaultInputContainer"
+                    android:hint="Date Of Birth" >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dobInput"
+                        style="@style/defaultInput"
+                        android:focusable="false"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email"
+                    style="@style/defaultInputContainer"
+                    android:hint="Email" >
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/defaultInput"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password"
+                    style="@style/defaultInputContainer"
+                    android:hint="Password" >
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/defaultInput"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:onClick="signup"
+                    android:text="Signup" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

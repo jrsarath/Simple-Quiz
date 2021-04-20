@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:layout_gravity="center"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="15px">
+        <ImageButton
+            style="@style/headerBackBtn"
+            android:onClick="goBack" />
+        <TextView
+            style="@style/headerText"
+            android:text="Login"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_login"
+            android:layout_weight="1"
+            android:padding="30dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="30dp"
+                android:paddingBottom="30dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email"
+                    style="@style/defaultInputContainer"
+                    android:hint="Username">
+                    <TextView
+                        style="@style/defaultLabel"
+                        android:text="Enter Email Address"
+                        />
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/defaultInput"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password"
+                    style="@style/defaultInputContainer"
+                    android:hint="Password">
+                    <TextView
+                        style="@style/defaultLabel"
+                        android:text="Enter Password"
+                        />
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/defaultInput"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:onClick="login"
+                    android:text="Login" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Simple Quiz</string>
+
+    <string name="question1">Which city is also known as City of Joy?</string>
+    <string name="question1_answer1">Delhi</string>
+    <string name="question1_answer2">Mumbai</string>
+    <string name="question1_answer3">Kolkata</string>
+    <string name="question1_answer4">Jaipur</string>
+    <string name="question1_correct_answer">@string/question1_answer3</string>
+    <string name="question1_correct_answer_text">Correct Answer: Kolkata</string>
+
+    <string name="question2">Which items between this items is a sweet ?</string>
+    <string name="question2_answer1">Pudding</string>
+    <string name="question2_answer2">Rosogolla</string>
+    <string name="question2_answer3">Carrot\'s Halwa</string>
+    <string name="question2_answer4">Biriyani</string>
+    <string name="question2_correct_answer_text">Correct Answer: Pudding, Rosogolla, Carrot\'s Halwa, Biriyani</string>
+
+    <string name="question3">Who is the current Vice President of India ?</string>
+    <string name="question3_answer1">Piyush Goyal</string>
+    <string name="question3_answer2">Venkaiah Naidu</string>
+    <string name="question3_answer3">Rajnath Singh</string>
+    <string name="question3_answer4">Madan Mitra</string>
+    <string name="question3_correct_answer">@string/question3_answer2</string>
+    <string name="question3_correct_answer_text">Correct Answer: Venkaiah Naidu</string>
+
+    <string name="question4">Where is the Kedarnath Dham located ?</string>
+    <string name="question4_answer1">Uttarakhand</string>
+    <string name="question4_answer2">Himachal Pradesh</string>
+    <string name="question4_answer3">Jammu &amp; Kashmir</string>
+    <string name="question4_answer4">Uttar Pradesh</string>
+    <string name="question4_correct_answer">@string/question4_answer1</string>
+    <string name="question4_correct_answer_text">Correct Answer: Uttarakhand</string>
+
+    <string name="question5">Where is the Statue of Unity located ?</string>
+    <string name="question5_answer1">Mumbai</string>
+    <string name="question5_answer2">Karnataka</string>
+    <string name="question5_answer3">Maharashtra</string>
+    <string name="question5_answer4">Gujarat</string>
+    <string name="question5_correct_answer">@string/question5_answer4</string>
+    <string name="question5_correct_answer_text">Correct Answer: Gujarat</string>
+</resources>

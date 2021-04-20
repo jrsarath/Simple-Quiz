@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="60dp">
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_below="@id/LinearLayout"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:src="@drawable/ic_launcher_foreground" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="50sp"/>
+        <ImageView
+            android:layout_below="@id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_handcrafter_in_india" />
+    </LinearLayout>
+</RelativeLayout>

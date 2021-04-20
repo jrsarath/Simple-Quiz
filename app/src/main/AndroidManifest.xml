@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jrsarath.SimpleQuiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quzinator">
+        <activity android:name="com.jrsarath.SimpleQuiz.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jrsarath.SimpleQuiz.MainActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.LoginActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.SignupActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.HomeActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.QuestionOneActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.QuestionTwoActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.QuestionThreeActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.QuestionFourActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.QuestionFiveActivity" />
+        <activity android:name="com.jrsarath.SimpleQuiz.ResultActivity" />
+    </application>
+
+</manifest>
